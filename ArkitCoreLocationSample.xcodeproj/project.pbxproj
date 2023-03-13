@@ -13,6 +13,7 @@
 		6EC8B11C29BF5F9100F8A43A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6EC8B11A29BF5F9100F8A43A /* Main.storyboard */; };
 		6EC8B11E29BF5F9400F8A43A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6EC8B11D29BF5F9400F8A43A /* Assets.xcassets */; };
 		6EC8B12129BF5F9400F8A43A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6EC8B11F29BF5F9400F8A43A /* LaunchScreen.storyboard */; };
+		6EC8B12A29BF66F700F8A43A /* ARCL in Frameworks */ = {isa = PBXBuildFile; productRef = 6EC8B12929BF66F700F8A43A /* ARCL */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6EC8B12A29BF66F700F8A43A /* ARCL in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = ArkitCoreLocationSample;
+			packageProductDependencies = (
+				6EC8B12929BF66F700F8A43A /* ARCL */,
+			);
 			productName = ArkitCoreLocationSample;
 			productReference = 6EC8B11129BF5F9100F8A43A /* ArkitCoreLocationSample.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = 6EC8B10829BF5F9100F8A43A;
+			packageReferences = (
+				6EC8B12829BF66F700F8A43A /* XCRemoteSwiftPackageReference "ARKit-CoreLocation" */,
+			);
 			productRefGroup = 6EC8B11229BF5F9100F8A43A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -358,6 +366,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6EC8B12829BF66F700F8A43A /* XCRemoteSwiftPackageReference "ARKit-CoreLocation" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ProjectDent/ARKit-CoreLocation";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6EC8B12929BF66F700F8A43A /* ARCL */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6EC8B12829BF66F700F8A43A /* XCRemoteSwiftPackageReference "ARKit-CoreLocation" */;
+			productName = ARCL;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6EC8B10929BF5F9100F8A43A /* Project object */;
 }
