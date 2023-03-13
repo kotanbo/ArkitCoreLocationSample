@@ -21,5 +21,9 @@
 			</array>
 		</dict>
 	</dict>
+    <key>NSCameraUsageDescription</key>
+    <string>AR 表示でカメラを利用します。</string>
+    <key>NSLocationWhenInUseUsageDescription</key>
+    <string>AR 表示で現在地を取得します。</string>
 </dict>
 </plist>
